@@ -1,0 +1,48 @@
+nav {
+  background: rgba(1, 1, 1, 0.4);
+  width: max-content;
+  display: block;
+  padding: 1rem, 1.8rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.2rem;
+  display: flex;
+  gap: 1.5rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(
+    15px
+  ); /* Efectos graficos como desenfoque o cambio de color del area */
+}
+
+nav a {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 40%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background: rgba(1, 1, 1, 0.4);
+}
+
+nav a.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: 100vh;
+  }
+  nav {
+    gap: 0.2rem;
+    bottom: 5rem;
+  }
+  nav a {
+    padding: 0.5rem;
+  }
+}

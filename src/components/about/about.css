@@ -1,0 +1,174 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  gap: 15%;
+}
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(
+    75deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+  display: grid;
+  place-items: inherit;
+}
+
+.about__me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(9deg);
+  transition: var(--transition);
+}
+
+.about__me-image:hover {
+  transform: rotate(0);
+}
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.about__card {
+  background: var(--color-bg-variant);
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about__icon {
+  color: var(--color-primary);
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 1.3rem;
+}
+
+.about__card small {
+  font-size: 1rem;
+  color: var(--color-light);
+}
+
+a {
+  margin-top: 1rem;
+}
+
+/* ########## MEDIA QUERIES (TABLETS) ########## */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .about__me {
+    width: 25%;
+    margin: 0.5rem auto 1rem;
+  }
+
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+
+  section > h2 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about__me {
+    width: 35%;
+    margin-bottom: 0.8rem;
+    margin-top: 0rem;
+  }
+  .about__icon {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+  }
+  .about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 0.1rem;
+  }
+  .about__card {
+    padding: 0.5rem;
+    overflow: scroll;
+  }
+
+  .about__card small {
+    font-size: 0.95rem;
+  }
+
+  .about__card h5 {
+    font-size: 1.1rem;
+  }
+  a {
+    margin-top: 0.1rem;
+  }
+
+  .about__container p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about__me {
+    width: 70%;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+  }
+  .about__icon {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+  }
+  .about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.1rem;
+  }
+  .about__card {
+    padding: 0.5rem;
+    overflow: scroll;
+  }
+
+  section > h5 {
+    margin-top: 4rem;
+  }
+
+  .about__card small {
+    font-size: 0.65rem;
+  }
+
+  .about__card h5 {
+    font-size: 0.8rem;
+  }
+  a {
+    margin-top: 0.1rem;
+  }
+
+  .about__container p {
+    font-size: 0.8rem;
+  }
+}
