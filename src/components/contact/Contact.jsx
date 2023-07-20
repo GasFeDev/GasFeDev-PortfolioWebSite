@@ -4,19 +4,39 @@ import { MdOutlineMail } from "react-icons/md";
 import { SiMessenger } from "react-icons/si";
 import { ImWhatsapp } from "react-icons/im";
 import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
-      "service_5y9kegl",
-      "template_diznizp",
-      form.current,
-      "WI0AnmeYPyFJ7-OkY"
-    );
+    emailjs
+      .sendForm(
+        "service_rbdvimj",
+        "template_mgosgap",
+        form.current,
+        "RZewQ4uKpn4thQmWB"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          Swal.fire({
+            icon: "success",
+            title: "Success!",
+            text: "Your message has been sent successfully.",
+          });
+        },
+        (error) => {
+          console.log(error.text);
+          Swal.fire({
+            icon: "error",
+            title: "Error!",
+            text: "There was an error sending your message.",
+          });
+        }
+      );
     e.target.reset();
   };
 
@@ -30,8 +50,8 @@ const Contact = () => {
           <article className="contact__option">
             <MdOutlineMail className="contact__option-icon" />
             <h4>Email</h4>
-            <h5>gasfedev@gmail</h5>
-            <a href="mailto: gasfedev@gmail">Send a massage</a>
+            <h5>gasfedev@gmail.com</h5>
+            <a href="mailto: gasfedev@gmail.com">Send a message</a>
           </article>
           <article className="contact__option">
             <SiMessenger className="contact__option-icon" />
@@ -40,8 +60,9 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/federico-abelda%C3%B1o-0b0429250/"
               target="_blank"
+              rel="noreferrer"
             >
-              Send a massage
+              Send a message
             </a>
           </article>
           <article className="contact__option">
@@ -51,8 +72,9 @@ const Contact = () => {
             <a
               href="https://api.whatsapp.com/send?phone+542604225858"
               target="_blank"
+              rel="noreferrer"
             >
-              Send a massage
+              Send a message
             </a>
           </article>
         </div>

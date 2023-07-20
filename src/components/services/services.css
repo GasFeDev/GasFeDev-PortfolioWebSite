@@ -1,7 +1,7 @@
 .services__container {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .service {
@@ -27,12 +27,12 @@
 
 .service__head h3 {
   color: var(--color-bg);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 .service__list {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .service__list li {
@@ -43,12 +43,12 @@
 
 .service__list-icon {
   color: var(--color-primary);
-  margin-top: 2px;
-  font-size: 1.8rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
 }
 
 .service__list p {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 /* ########## MEDIA QUERIES (TABLETS) ########## */
@@ -58,7 +58,7 @@
   }
   .services__container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
     margin-bottom: 0.1rem;
   }
@@ -77,11 +77,11 @@
   }
 
   .service__list p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .service__list-icon {
-    margin-top: -15px;
-    font-size: 3.8rem;
+    margin-top: 0.6rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -92,7 +92,6 @@
   }
   .services__container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
     gap: 0.5rem;
     margin-bottom: 0.1rem;
   }
@@ -111,11 +110,11 @@
   }
 
   .service__list p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
   .service__list-icon {
-    margin-top: -15px;
-    font-size: 3.8rem;
+    margin-top: 0.5rem;
+    font-size: 0.5rem;
   }
 }
 
@@ -144,10 +143,10 @@
   }
 
   .service__list p {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
   .service__list-icon {
-    margin-top: -15px;
-    font-size: 3.8rem;
+    margin-top: 0.4rem;
+    font-size: 0.4rem;
   }
 }

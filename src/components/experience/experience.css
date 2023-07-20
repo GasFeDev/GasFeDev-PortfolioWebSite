@@ -1,12 +1,12 @@
 .experience__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr;
   gap: 2.5rem;
 }
 
 .experience__container > div {
   background: var(--color-bg-variant);
-  padding: 2rem 5rem;
+  padding: 1rem 2rem;
   border-radius: 2rem;
   border: 2px solid transparent;
   transition: var(--transition);
@@ -26,8 +26,8 @@
 
 .experience__content {
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  row-gap: 2rem;
+  grid-template-columns: 2fr 2fr 2fr;
+  row-gap: 1rem;
 }
 
 .experience__details {
@@ -42,22 +42,33 @@
 
 /* ########## MEDIA QUERIES (TABLETS) ########## */
 @media screen and (max-width: 1024px) {
-  .experience__container > div {
-    padding: 2rem 3rem;
+  .experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  .experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5rem;
   }
 }
 
 /* ########## MEDIA QUERIES (PHONE) ########## */
 @media screen and (max-width: 800px) {
-  section > h5 {
-    margin-top: 5rem;
-  }
   .experience__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     gap: 0.5rem;
     margin-bottom: 0.1rem;
   }
+
+  .experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5rem;
+  }
+
   .experience__container > div {
     padding: 0.5rem;
     overflow: scroll;
@@ -67,31 +78,14 @@
     margin-bottom: 1rem;
   }
 
-  .experience__content {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 0.8rem;
-    font-size: 0.8rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
-  section > h5 {
-    margin-top: 5rem;
-  }
   .experience__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
     margin-bottom: 0.1rem;
-  }
-  .experience__container > div {
-    padding: 0.5rem;
-    overflow: scroll;
-  }
-  .experience__container > div h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
   }
 
   .experience__content {
@@ -100,4 +94,15 @@
     row-gap: 0.8rem;
     font-size: 0.8rem;
   }
+
+  .experience__container > div {
+    padding: 0.5rem;
+    overflow: scroll;
+  }
+  .experience__container > div h3 {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  
 }

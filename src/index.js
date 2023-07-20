@@ -1,5 +1,8 @@
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
+import Modal from "react-modal";
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+Modal.setAppElement("#root");
+
+createRoot(document.querySelector("#root")).render(<App />);

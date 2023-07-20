@@ -1,13 +1,15 @@
 .container.testimonials__container {
   width: 40%;
+  height: 60vh;
   padding-bottom: 3rem;
 }
 
 .client__avatar {
-  width: 5rem;
+  width: 70%;
+  height: 67%;
   aspect-ratio: 1/1;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 2%;
   margin: 0 auto 1rem;
   border: 0.5rem solid var(--color-primary-variant);
 }
@@ -49,5 +51,11 @@
 
   .client__review {
     width: var(--container-width-sm);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .client__review {
+    display: none;
   }
 }

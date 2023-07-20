@@ -26,11 +26,11 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Acceder a diferentes secciones con un scroll automatico y suave */
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  display: none; /* Ocultar la barra de desplazamiento */
+  display: none;
 }
 
 body {
@@ -44,8 +44,8 @@ body {
 /* ######## Estilos Generales ######## */
 
 .container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
+  width: var(--container-width-ms);
+  margin: 2rem auto 6rem auto;
 }
 
 h1,
@@ -53,20 +53,12 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 600; /* Grueso de la letra */
+  font-weight: 600;
 }
 
 h1 {
-  font-size: 3rem; /* Tamaño de la fuente */
+  font-size: 3rem;
 }
-
-section {
-  margin-top: 10rem;
-  margin-bottom: 43rem;
-  height: 100vh;
-}
-
-/* El símbolo > se puede interpretar como Todos los elementos que son hijos directos de seccion */
 
 section > h2,
 section > h5 {
@@ -76,7 +68,7 @@ section > h5 {
 
 section > h2 {
   color: var(--color-primary);
-  margin-bottom: 2.5rem; /*  espacio requerido en la parte inferior */
+  margin-bottom: 0.5rem;
 }
 
 .text-light {
@@ -88,7 +80,6 @@ a {
   transition: var(--transition);
 }
 
-/* hover: puntero del mouse */
 a:hover {
   color: var(--color-white);
 }
@@ -99,7 +90,7 @@ a:hover {
   color: var(--color-primary);
   padding: 0.9rem 1.3rem;
   border-radius: 0.6rem;
-  cursor: pointer; /* Manito */
+  cursor: pointer;
   border: 2px solid var(--color-primary);
   transition: var(--transition);
 }
@@ -118,18 +109,14 @@ a:hover {
 img {
   display: block;
   width: 100%;
-  object-fit: cover; /* object-fit indica cómo el contenido de un elemento reemplazado, debería redimensionarse para ajustarse a su contenedor.
-  cover: El contenido reemplazado se dimensiona para mantener su relación de aspecto mientras llena el cuadro de contenido completo del elemento. */
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ########## MEDIA QUERIES (TABLETS) ########## */
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
-  }
-  section {
-    margin-top: 10rem;
-    margin-bottom: 43rem;
   }
 }
 
@@ -138,19 +125,11 @@ img {
   .container {
     width: var(--container-width-ms);
   }
-  section > h2 {
-    margin-top: 3rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 1.8rem; /* Tamaño de la fuente */
-  }
-  section {
-    margin-top: 10rem;
-    margin-bottom: 43rem;
-    height: 100vh;
+    font-size: 1.8rem;
   }
   section > h2 {
     margin-top: 0rem;
@@ -163,5 +142,11 @@ img {
   .btn-primary {
     background: var(--color-primary);
     color: var(--color-light);
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    height: fit-content;
   }
 }

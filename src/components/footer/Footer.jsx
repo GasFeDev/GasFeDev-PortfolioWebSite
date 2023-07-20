@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { BsFacebook } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
 
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="#Home">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -21,23 +21,31 @@ const Footer = () => {
           <a href="#experience">Experience</a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#services">Competences</a>
         </li>
         <li>
           <a href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#testimonials">Diplomas</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
         </li>
       </ul>
       <div className="footer__socials">
-        <a href="https://facebook.com">
-          <BsFacebook />
+        <a
+          href="https://github.com/GasFeDev?tab=repositories"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsGithub />
         </a>
-        <a href="https://www.linkedin.com/in/federico-abelda%C3%B1o-0b0429250/">
+        <a
+          href="https://www.linkedin.com/in/federico-abelda%C3%B1o-0b0429250/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsLinkedin />
         </a>
       </div>
