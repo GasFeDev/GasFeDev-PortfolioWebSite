@@ -11,7 +11,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Radio+Canada:ital@1&display=swap");
 
 :root {
-  --color-bg: #1f1f28;
+  --color-bg: #101011ee;
   --color-bg-variant: #2c2c5c;
   --color-primary: #3db4ff;
   --color-primary-variant: rgba(255, 255, 255, 0.5);
@@ -38,14 +38,13 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 2;
-  background-image: url(../src/assets/textura.jpg);
 }
 
 /* ######## Estilos Generales ######## */
 
 .container {
   width: var(--container-width-ms);
-  margin: 2rem auto 6rem auto;
+  margin: 0.1rem auto 3rem auto;
 }
 
 h1,
@@ -58,6 +57,9 @@ h5 {
 
 h1 {
   font-size: 3rem;
+  margin-top: 150px;
+  position: relative;
+  bottom: 40px;
 }
 
 section > h2,

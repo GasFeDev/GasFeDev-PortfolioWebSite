@@ -29,7 +29,7 @@
 .about__me-image {
   border-radius: 2rem;
   overflow: hidden;
-  transform: rotate(3deg);
+  transform: rotate(0deg);
   transition: var(--transition);
 }
 
@@ -97,17 +97,6 @@
   border-radius: 0.5rem; 
   font-weight: bold; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
-}
-
-.about__container p::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 5px;
-  height: 90%;
-  background-color: var(--color-primary);
 }
 
 a {

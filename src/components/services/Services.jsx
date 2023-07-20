@@ -14,13 +14,14 @@ const competences = [
     ],
   },
   {
-    title: "API Development",
+    title: "Other Tools and Technologies",
     items: [
-      "Using Express as a framework for creating RESTful APIs.",
-      "Interacting with GraphQL API: Apollo Server, GraphQL.",
-      "Interacting with databases like Dgraph.",
-      "Communication with External Services: Axios.",
-      "Making HTTP requests with Axios",
+      "Date and Time Manipulation: Moment.js, Day.js.",
+      "PDF File Manipulation: pdf-lib, react-pdf.",
+      "Routing and Request Handling: React Router.",
+      "State Management: React Context, Redux.",
+      "AWS: S3, DynamoDB, Amazon API Gateway.",
+      "Render.com: Application deployment.",
     ],
   },
   {
@@ -42,28 +43,22 @@ const competences = [
     ],
   },
   {
+    title: "API Development",
+    items: [
+      "Using Express as a framework for creating RESTful APIs.",
+      "Interacting with GraphQL API: Apollo Server, GraphQL.",
+      "Interacting with databases like Dgraph.",
+      "Communication with External Services: Axios.",
+      "Making HTTP requests with Axios",
+    ],
+  },
+  {
     title: "Application Deployment",
     items: [
       "Docker Containers: Dockerfile, image creation.",
       "Container Orchestration: Docker Compose.",
       "Docker Network Configuration.",
       "Using Nginx for serving applications and configuring proxies.",
-    ],
-  },
-  {
-    title: "Other Tools and Technologies",
-    items: [
-      "Date and Time Manipulation: Moment.js, Day.js.",
-      "PDF File Manipulation: pdf-lib, react-pdf.",
-      "Routing and Request Handling: React Router.",
-      "State Management: React Context, Redux.",
-    ],
-  },
-  {
-    title: "Cloud Service Integration",
-    items: [
-      "AWS: S3, DynamoDB, Amazon API Gateway.",
-      "Render.com: Application deployment.",
     ],
   },
 ];

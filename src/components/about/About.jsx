@@ -74,9 +74,6 @@ const About = () => {
               rest of my days in something that I am passionate about and brings
               me happiness.
             </p>
-            <a href="#contact" className="btn btn-primary">
-              Let's Talk
-            </a>
           </div>
         </div>
       </div>

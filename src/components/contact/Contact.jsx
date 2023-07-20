@@ -3,50 +3,28 @@ import "./contact.css";
 import { MdOutlineMail } from "react-icons/md";
 import { SiMessenger } from "react-icons/si";
 import { ImWhatsapp } from "react-icons/im";
-import { useRef } from "react";
-import emailjs from "emailjs-com";
-import Swal from "sweetalert2";
+import { BsGithub } from "react-icons/bs";
 
 const Contact = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_rbdvimj",
-        "template_mgosgap",
-        form.current,
-        "RZewQ4uKpn4thQmWB"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          Swal.fire({
-            icon: "success",
-            title: "Success!",
-            text: "Your message has been sent successfully.",
-          });
-        },
-        (error) => {
-          console.log(error.text);
-          Swal.fire({
-            icon: "error",
-            title: "Error!",
-            text: "There was an error sending your message.",
-          });
-        }
-      );
-    e.target.reset();
-  };
-
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
+      <h5>...</h5>
       <h2>Contact Me</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
+          <article className="contact__option">
+            <MdOutlineMail className="contact__option-icon" />
+            <h4>Web Site</h4>
+            <h5>https://gasfedev-portfoliowebsite.vercel.app/</h5>
+            <a
+              href="https://gasfedev-portfoliowebsite.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit my Web Site
+            </a>
+          </article>
           <article className="contact__option">
             <MdOutlineMail className="contact__option-icon" />
             <h4>Email</h4>
@@ -66,6 +44,18 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
+            <BsGithub className="contact__option-icon" />
+            <h4>GitHub</h4>
+            <h5>https://github.com/GasFeDev</h5>
+            <a
+              href="https://github.com/GasFeDev?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit my repositories
+            </a>
+          </article>
+          <article className="contact__option">
             <ImWhatsapp className="contact__option-icon" />
             <h4>Whatsapp</h4>
             <h5>+542604225858</h5>
@@ -78,26 +68,6 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        {/* END OF CONTACT OPTIONS */}
-
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your full Name"
-            required
-          />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            type="message"
-            rows="7"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
-        </form>
       </div>
     </section>
   );
