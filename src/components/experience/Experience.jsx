@@ -120,6 +120,13 @@ const Experience = () => {
             <article className="experience__details">
               <BsBookmarkCheckFill className="experience__details-icon" />
               <div>
+                <h4>Solidity (Web3)</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
                 <h4>Express</h4>
                 <small className="text-light">Intermediate</small>
               </div>

@@ -37,7 +37,7 @@ const competences = [
   {
     title: "Blockchain Interaction",
     items: [
-      "Ethereum: Knowledge in interacting with the Ethereum network and utilizing smart contracts through the Ethers library.",
+      "Ethereum: Proficient in interacting with the Ethereum network and developing smart contracts using Solidity.",
       "Ethereum Networks: Ability to read contract states, send transactions, and make specific function calls, demonstrating your understanding and practical application of blockchain technology.",
     ],
   },

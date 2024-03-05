@@ -27,21 +27,6 @@ const data = [
     name: "Title: Industrial Engineer",
     review: "Universidad Técnologica Nacional - Facultad Regional San Rafael",
   },
-  {
-    avatar: Avt3,
-    name: "Title: Argentina Programa 4.0",
-    review: "First Steps in Frontend Development",
-  },
-  {
-    avatar: Avt4,
-    name: "Title: Argentina Programa 4.0",
-    review: "First Steps in Frontend Development",
-  },
-  {
-    avatar: Avt5,
-    name: "Title: Argentina Programa 4.0",
-    review: "Currently attending the course 'Mobile Application Development'",
-  },
 ];
 
 const Diplomas = () => {
