@@ -6,14 +6,14 @@ import IMG3 from "../../assets/dashboards-be-docker.png";
 import IMG4 from "../../assets/dashboards-fe + dashboards-be - Local.png";
 import IMG5 from "../../assets/dashboards-fe-docker.png";
 import IMG6 from "../../assets/snapshot.png";
-import IMG7 from "../../assets/CHATpdf.png";
-import IMG8 from "../../assets/CRUD-AWS.png";
+import IMG7 from "../../assets/Web3.png";
+import IMG8 from "../../assets/TheGraph.png";
 import IMG9 from "../../assets/ReservasColas.png";
 import IMG10 from "../../assets/PantallaMultiRedes.png";
-import IMG11 from "../../assets/CurriculumVitae.png";
+import IMG11 from "../../assets/ThirdWeb.png";
 import IMG12 from "../../assets/FrontPanel.png";
 import IMG13 from "../../assets/FrontDeploySmartContract.png";
-import IMG14 from "../../assets/PortfolioWebSite.png";
+import IMG14 from "../../assets/Game.png";
 import IMG15 from "../../assets/api-Graphql-ApolloServer.jpg";
 
 const data = [
@@ -80,23 +80,14 @@ const data = [
   {
     id: 8,
     image: IMG8,
-    title: "CRUD-AWS",
+    title: "Subgraph Development and Deployment",
     subtitle:
-      "Project for developing a CRUD application (Create, Read, Update, Delete), where I applied a variety of knowledge and technologies to create an interactive and functional user interface. I used React and Bootstrap for the design and appearance of the application. For form management and data interaction, I utilized React Bootstrap, a library that integrates Bootstrap with React. This allowed me to use pre-defined form components and efficiently handle events and data changes. To display icons, I used the React Icons library, and I also leveraged the SweetAlert and SweetAlert2 libraries to easily and attractively display custom pop-up messages and modals in the application. Furthermore, I integrated the functionality of a webcam using React Webcam, enabling users to capture images. Lastly, for state management and communication with an API, I utilized the useState and useEffect hooks provided by React. These hooks allowed me to store and update states in the application, as well as make HTTP requests to retrieve and update data. In this project, data creation, storage, updating, and deletion were achieved through HTTP requests using the GET and PUT methods to the 'https://528676oyjb.execute-api.us-east-1.amazonaws.com' URL on Amazon, where management data tables were previously created in DynamoDB, and endpoints were set up through Amazon API Gateway to facilitate communication with the requests.",
-    github: "https://github.com/GasFeDev/CRUD-AWS",
-    demo: "https://crud-aws.vercel.app/",
+      "This project provides a detailed guide for the development, configuration, and deployment of subgraphs using The Graph, Docker, and Foundry-Hardhat. It includes setups in local environments, docker-compose.yml files, and subgraph deployments on test networks and hosted services. Key aspects such as integration with local Ethereum nodes, the use of PostgreSQL databases, decentralized storage through IPFS, and customization for specific networks like BSC Testnet are highlighted. This project is designed to streamline both the development and execution of subgraphs in development and production environments, ensuring scalable and efficient solutions for decentralized applications (dApps).",
+    github:
+      "**Private repository developed under the framework of a professional development services contract**",
   },
   {
     id: 9,
-    image: IMG13,
-    title: "FrontDeploySmartContract",
-    subtitle:
-      "Project developed in Next.js, a React framework, which provides advanced functionalities such as server-side rendering and static page generation, enhancing the efficiency and performance of my application. For user interface styling and design, I used the UI libraries MUI (formerly known as Material-UI) and RainbowKit. MUI offered predefined components and styles based on the Material Design language, while RainbowKit allowed me to create user interfaces with rich experiences, animations, and transitions. For form validation, I employed Formik and Yup. Formik simplified the management of complex forms by providing a set of utilities and functions for state control and form field validation. On the other hand, Yup enabled me to define flexible validation schemas and perform precise data validations. For state management and interaction with contracts, I utilized the libraries React Hook Form and Ethers. React Hook Form simplified form handling with a hooks-based approach for state management and form validation. Ethers, on the other hand, facilitated interaction (with the help of RainbowKit) with smart contracts on the Ethereum network, allowing me to read contract states and perform transactions. Additionally, I employed other libraries and tools such as Moment.js for date and time handling, Styled Components and Emotion for styling and component manipulation, React Toastify for displaying pop-up notifications, and ESLint to maintain code quality and ensure best development practices.",
-    github: "https://github.com/GasFeDev/FrontDeploySmartContract",
-    demo: "https://gasfedev-deployreactor.vercel.app/",
-  },
-  {
-    id: 10,
     image: IMG6,
     title: "snapshot",
     subtitle:
@@ -105,22 +96,33 @@ const data = [
     demo: "https://gasfedev-snapshot.onrender.com/",
   },
   {
+    id: 10,
+    image: IMG13,
+    title: "FrontDeploySmartContract",
+    subtitle:
+      "Project developed in Next.js, a React framework, which provides advanced functionalities such as server-side rendering and static page generation, enhancing the efficiency and performance of my application. For user interface styling and design, I used the UI libraries MUI (formerly known as Material-UI) and RainbowKit. MUI offered predefined components and styles based on the Material Design language, while RainbowKit allowed me to create user interfaces with rich experiences, animations, and transitions. For form validation, I employed Formik and Yup. Formik simplified the management of complex forms by providing a set of utilities and functions for state control and form field validation. On the other hand, Yup enabled me to define flexible validation schemas and perform precise data validations. For state management and interaction with contracts, I utilized the libraries React Hook Form and Ethers. React Hook Form simplified form handling with a hooks-based approach for state management and form validation. Ethers, on the other hand, facilitated interaction (with the help of RainbowKit) with smart contracts on the Ethereum network, allowing me to read contract states and perform transactions. Additionally, I employed other libraries and tools such as Moment.js for date and time handling, Styled Components and Emotion for styling and component manipulation, React Toastify for displaying pop-up notifications, and ESLint to maintain code quality and ensure best development practices.",
+    github: "https://github.com/GasFeDev/FrontDeploySmartContract",
+    demo: "https://gasfedev-deployreactor.vercel.app/",
+  },
+  {
     id: 11,
     image: IMG7,
-    title: "chatPDF",
+    title:
+      "Creation of an ERC20 contract | NFT Creation | Upgradeable Smart Contracts | Development of a Decentralized Stablecoin | Implementation of a DAO with an ERC20 Governance Token | Airdrop and Distribution of ERC20 Tokens Using Merkle Trees | Testing Uniswap V2 Router: Swap Exact Tokens For Tokens | Deploying a Pair Contract on Uniswap V2 Factory | Adding Liquidity to a Token/ERC20/WETH Pair on Uniswap V2 | Removing Liquidity from a Token/ERC20/WETH Pair on Uniswap V2 | Tracking Prices with TWAP on Uniswap V2 | Uniswap V2 Arbitrage Contract (Swap & Flash Swap) | Uniswap V2 Arbitrage Bot Using Flash Swap",
     subtitle:
-      "Project Description: Web Application Development using React. For the design and styling of the application, I have utilized the Material-UI framework, specifically the @mui/material package, which provides a set of predefined components and styles to create a modern and attractive user interface. I have also used @emotion/react and @emotion/styled for managing styles with CSS in JS, allowing me to apply styles more efficiently and modularly. Regarding communication with cloud services, I have used the aws-sdk and @aws-sdk/client-s3 libraries to interact with the AWS S3 cloud storage service. These libraries have provided me with methods to perform operations such as uploading, downloading, and deleting files in S3. For making HTTP requests to API servers, I have utilized the Axios library to send requests to the chatGPT API. In handling PDF files, I have employed the pdf-lib and react-pdf libraries, which have allowed me to create, modify, and view PDF files within the application.",
-    github: "https://github.com/GasFeDev/ChatPDF",
-    demo: "https://chat-pdf.vercel.app/",
+      "Development of an ERC20 contract using OpenZeppelin, with basic functions like initial supply and deployment on the configured network through Forge scripts | Development of interactive or dynamic ERC721 NFTs using different SVG images stored on the blockchain | Implementation of upgradeable contracts through proxies, using the UUPS design pattern to allow contract updates without losing state or storage | Construction of a Stablecoin protocol with contracts that manage minting, burning, and collateral, integrating price oracles like Chainlink to ensure stability | Development of a DAO using an ERC20 token for governance, where participants can vote and make decisions on the protocol | Creation of an airdrop system to distribute ERC20 tokens to a list of addresses validated with Merkle Trees, ensuring the accuracy of claims | Testing the Uniswap V2 Router contract's swapExactTokensForTokens function by simulating a user exchanging 100 WETH for an ERC20 token, ensuring that the approval and swap process works as expected | Deploying a new ERC20 token and creating a token pair on Uniswap V2 using IUniswapV2Factory and IUniswapV2Pair, verifying the correct creation and token pairing by checking the addresses of token0 and token1 | Adding liquidity to a Token/ERC20/WETH pair on Uniswap V2 using the addLiquidity function, transferring the respective tokens to the pair's contract to facilitate trading | Withdrawing liquidity from a Token/ERC20/WETH pair on Uniswap V2 using the removeLiquidity function, ensuring that the correct amounts of TokenERC20 and WETH are returned to the user | Using a Time-Weighted Average Price (TWAP) algorithm to track prices of a token pair on Uniswap V2, ensuring accurate price estimation over time, and testing the price stability and adjustments after swaps | Building a contract for arbitrage opportunities on Uniswap V2, including both regular swaps and flash swaps, where tokens are borrowed, swapped, and returned with profit, ensuring the minimum profit condition is met | Implementing an arbitrage bot using a flash swap on Uniswap V2, where tokens are borrowed, swapped, and returned to ensure a profit, and verifying the correct execution of the arbitrage mechanism with test cases on different pairs like Uniswap and Sushiswap",
+    github:
+      "**Private repository developed under the framework of a professional development services contract**",
   },
   {
     id: 12,
     image: IMG14,
-    title: "PortfolioWebSite",
+    title:
+      "IPFS, Spheron and Pinata file management | NFT metadata generation | Integration and Management of NFTs on an EVM Platform with Subquery and IPFS | Development and Management of NFTs on EVM Networks with MongoDB and Express | Management and Querying of Data in Liquidity Pools and Staking with NFT Integration | Staking and Unstaking Implementation for an ERC20 Token on Ethereum | Implementation to List an ERC20 Token on Uniswap Using the Uniswap SDK",
     subtitle:
-      "Project developed in React, to style and add icons to my website, I have used the React Icons library. This library offers a wide range of predefined icons that can be easily used in the user interface components. For sending emails from the website, I have utilized the EmailJS and emailjs-com libraries. These libraries provide functionalities to send emails directly from the browser using third-party services, which facilitated the implementation of the contact functionality on my website. Additionally, I have used the Swiper library to create interactive slideshow presentations and image carousels on my website. Swiper offers a wide range of customization options and transition effects, allowing me to showcase my work attractively and dynamically.",
-    github: "https://github.com/GasFeDev/GasFeDev-PortfolioWebSite",
-    demo: "https://gasfedev-portfoliowebsite.vercel.app/",
+      "Spheron File Recovery, which interacts with the Pinata API to repair and handle large IPFS data sets efficiently | Generation of dynamic metadata for NFTs that represent NFTs using a Node.js script to be able to integrate with IPFS | Implementation of systems to manage and visualize NFTs on an Ethereum|based (EVM) platform using GraphQL, Subquery, and IPFS. Utilization of queries to smart contracts to retrieve information about NFTs, such as tokenId, owner, uri, and timestamp, and obtaining metadata from NFTs via IPFS, processing them, and displaying them on the application's user interface | Development of backend solutions for NFT management on EVM platforms, using MongoDB to handle schemas related to networks, NFTs, and migration elements. Implementation of routes in Express servers to perform tasks such as migration requests, status verification, status updates, and NFT migration processing | Implementation of Express endpoints to query and process data from liquidity pools and staking, integrating the handling of NFT events and other associated transactions. Constant update of data on token and staking transactions, optimization of queries for large volumes of information through regular intervals, and the use of MongoDB as a database to ensure efficient querying of large amounts of NFT events and transactions | Implementation of staking and unstaking systems for an ERC20 token through wallet connection, token selection, and participation in token staking to earn rewards. It includes functions to check the balance, list current stakes, and manage staking and unstaking transactions using Smart Contracts on the Ethereum network | Development of listing an ERC20 token on Uniswap using the Uniswap SDK, including provider connection, selection of custom tokens (such as DGA and USDC), and integration with the Uniswap widget to facilitate token swapping, while managing token selection based on the chain ID.",
+    github:
+      "**Private repository developed under the framework of a professional development services contract**",
   },
   {
     id: 13,
@@ -134,11 +136,12 @@ const data = [
   {
     id: 14,
     image: IMG11,
-    title: "CurriculumVitae",
+    title:
+      "thirdweb Smart Contracts: Prebuilt Contracts and Extensions for Web3 Development",
     subtitle:
-      "Project developed using a combination of HTML, CSS, and JavaScript along with jQuery and unicons libraries to create an attractive and functional webpage. I have structured the HTML document using appropriate tags, configured meta tags for character set and initial page scale. I have linked custom CSS files and an external icon library. Additionally, I have utilized JavaScript to provide additional functionality such as DOM manipulation and event handling.",
-    github: "https://github.com/GasFeDev/CurriculumVitae",
-    demo: "https://gasfedev.github.io/CurriculumVitae/",
+      "This project includes a collection of prebuilt smart contracts and modular extensions to simplify the development of decentralized applications (dApps) in Web3. Using the thirdweb SDK, dashboard, and CLI, developers can quickly deploy contracts for common use cases such as ERC20, ERC721 tokens, marketplaces, token drops, and more. The repository provides an organized structure of base contracts, customizable extensions, and infrastructure contracts, along with tools to run and test contracts locally using Forge. It also offers the ability to audit contracts and access detailed documentation on how to implement and extend each one. I contributed to this project by assisting in its development, running tests, and helping integrate these contracts into decentralized applications, making it easier for developers to adopt secure, scalable, and ready-to-use solutions.",
+    github:
+      "**Private repository developed under the framework of a professional development services contract**",
   },
   {
     id: 15,
@@ -171,22 +174,34 @@ const Portfolio = () => {
               <div className="portfolio__item-cta">
                 {showLinks && (
                   <>
-                    <a
-                      href={github}
-                      className="btn"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Github
-                    </a>
-                    <a
-                      href={demo}
-                      className="btn btn-primary"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Website
-                    </a>
+                    {github &&
+                    github !==
+                      "**Private repository developed under the framework of a professional development services contract**" ? (
+                      <a
+                        href={github}
+                        className="btn"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Github
+                      </a>
+                    ) : (
+                      <span className="github-message">
+                        **Private repository developed under the framework of a
+                        professional development services contract**
+                      </span>
+                    )}
+
+                    {demo && (
+                      <a
+                        href={demo}
+                        className="btn btn-primary"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Website
+                      </a>
+                    )}
                   </>
                 )}
               </div>

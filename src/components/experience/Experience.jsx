@@ -120,13 +120,6 @@ const Experience = () => {
             <article className="experience__details">
               <BsBookmarkCheckFill className="experience__details-icon" />
               <div>
-                <h4>Solidity (Web3)</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsBookmarkCheckFill className="experience__details-icon" />
-              <div>
                 <h4>Express</h4>
                 <small className="text-light">Intermediate</small>
               </div>
@@ -185,6 +178,81 @@ const Experience = () => {
               <div>
                 <h4>PHP</h4>
                 <small className="text-light">Basic</small>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div className="experience__blockchain">
+          <h3>Blockchain Development</h3>
+          <div className="experience__content">
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Solidity</h4>
+                <small className="text-light">Advanced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Foundry</h4>
+                <small className="text-light">Advanced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Hardhat</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Remix IDE</h4>
+                <small className="text-light">Advanced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Ganache</h4>
+                <small className="text-light">Advanced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>IPFS</h4>
+                <small className="text-light">Advanced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>The Graph</h4>
+                <small className="text-light">Advanced</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Uniswap</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Rust</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsBookmarkCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Chainlink</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </article>
           </div>

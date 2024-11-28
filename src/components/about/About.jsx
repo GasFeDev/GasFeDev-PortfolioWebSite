@@ -25,54 +25,64 @@ const About = () => {
                 <FaAward className="about__icon" />
                 <h5>Experience</h5>
                 <small>
-                  As a freelancer developer, I have applied my skills in web
-                  development, blockchain integration, database management, API
-                  creation, deployment of applications in Docker containers, and
-                  utilization of styling and design libraries. I have worked on
-                  both frontend and backend projects, utilizing a variety of
-                  technologies and tools to deliver effective and high-quality
-                  solutions to my clients.
+                  I have worked on the creation and implementation of smart
+                  contracts, integrating them into Web3 projects. My experience
+                  includes the design and development of decentralized
+                  applications (dApps), database management, API creation and
+                  consumption, and the implementation of solutions. I have
+                  mastered both frontend and backend technologies, leveraging
+                  design libraries and modern tools to deliver robust, scalable,
+                  and high-quality solutions. My approach combines advanced
+                  technical skills and in-depth knowledge of blockchain
+                  architectures for effective project management. In addition to
+                  my work as a Full Stack Blockchain Developer, I also serve as
+                  a university professor in Blockchain Development, where I
+                  share my knowledge and expertise with the next generation of
+                  developers. As a professional with a background in Industrial
+                  Engineering, I bring a strategic focus to process optimization
+                  and efficient project management in all of my work.
                 </small>
               </article>
               <article className="about__card">
                 <VscFolderActive className="about__icon" />
-                <h5>Projects</h5>
+                <h5>Web Projects</h5>
                 <div className="projects__list">
                   <small>frontend-ispo</small>
                   <small>dashboards-fe</small>
                   <small>dashboards-be</small>
                   <small>snapshot</small>
-                  <small>chatPDF</small>
-                  <small>CRUD-AWS</small>
-                  <small>CRUD</small>
+                  <small>Creation of ERC20 and NFT contracts</small>
+                  <small>
+                    Subgraph Development and Deployment with The Graph
+                  </small>
                   <small>ReservasColas</small>
                   <small>PantallaMultiRedes</small>
-                  <small>CurriculumVitae</small>
+                  <small>Thirdweb Smart Contracts:</small>
                   <small>FrontPanel</small>
                   <small>FrontDeploySmartContract</small>
-                  <small>GasFeDev-PortfolioWebSite</small>
+                  <small>Uniswap</small>
                   <small>api-Graphql-ApolloServer</small>
                   <small>Squarespace Templates</small>
+                  <small>
+                    Upgradeable Smart Contracts, DAO, DeFi, Airdrop and
+                    Decentralized Stablecoin
+                  </small>
                 </div>
               </article>
             </div>
             <p>
-              Summary: An Argentine national currently residing in Malargüe,
-              Mendoza (Argentina). Freelance developer with skills in web
-              development, blockchain integration, database management, API
-              creation, and deploying applications using Docker containers.
-              Proficient in both frontend and backend development, leveraging a
-              wide range of technologies and tools. Committed to professional
-              growth and continuous learning, taking my first steps in the world
-              of programming in 2021. Hold a degree in Industrial Engineering
-              from the National Technological University (2017). Ever since I
-              entered the world of Programming, I felt immense satisfaction with
-              each step I took and with every knowledge I acquired. That's why,
-              regardless of the learning and experience gained through my
-              Degree, my short-term or medium-term goal is to earn one hundred
-              percent of my income as a Developer, and above all, to work the
-              rest of my days in something that I am passionate about and brings
-              me happiness.
+              Summary: I am a professional in Industrial Engineering, graduated
+              from the National Technological University (2017), with a solid
+              foundation in process optimization and project management. Since
+              2021, I have specialized in programming and the development of
+              technological solutions, gaining experience in key areas such as
+              full-stack development, blockchain, smart contracts, and
+              decentralized applications (dApps). My focus is centered on
+              continuous learning, innovation, and constant improvement, which
+              drives me to take on new challenges and grow both professionally
+              and personally. I currently reside in Malargüe, Mendoza,
+              Argentina, and I am committed to excellence and delivering a
+              positive impact in every project I undertake.
             </p>
             <a href="#contact" className="btn btn-primary">
               Let's Talk

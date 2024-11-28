@@ -35,13 +35,6 @@ const competences = [
     ],
   },
   {
-    title: "Blockchain Interaction",
-    items: [
-      "Ethereum: Proficient in interacting with the Ethereum network and developing smart contracts using Solidity.",
-      "Ethereum Networks: Ability to read contract states, send transactions, and make specific function calls, demonstrating your understanding and practical application of blockchain technology.",
-    ],
-  },
-  {
     title: "Application Deployment",
     items: [
       "Docker Containers: Dockerfile, image creation.",
@@ -66,6 +59,19 @@ const competences = [
       "Render.com: Application deployment.",
     ],
   },
+  {
+    title: "Blockchain Development",
+    items: [
+      "Languages and Frameworks: Extensive experience in smart contract development using Solidity, with expertise in standards such as ERC20, ERC721, and governance contracts. | Proficient in Ethers.js and Web3.js, with strong skills in interacting with Ethereum networks, sending transactions, and querying smart contracts. | In-depth knowledge of OpenZeppelin libraries for secure and robust smart contract implementation. | Experienced in development environments such as Hardhat, Truffle, and Forge, with a focus on testing, contract deployment, gas optimization, and simulation.",
+      "Smart Contract Development: Expertise in developing ERC20, ERC721, Stablecoins, DAOs, UUPS, and Proxies; designing and implementing smart contracts for fungible and non-fungible tokens, stablecoins, DAOs, and contracts with proxies for state-updating without loss of data. | Practical experience with DeFi platforms like Uniswap V2, creating and managing liquidity pools, performing swaps, and optimizing liquidity aggregation strategies, including the use of TWAP (Time-Weighted Average Price).",
+      "DApp Development: Frontend (React): Designing and implementing interactive user interfaces for decentralized applications (DApps), including advanced functionalities for interacting with smart contracts (staking, unstaking, token visualization). | Backend (Node.js/Express): Developing backend solutions for managing real-time data queries, NFT migrations, and processing staking events on blockchain platforms. | Smart Contract Integration: Ability to integrate Ethereum smart contracts into decentralized applications (DApps) using technologies like Ethers.js and Web3.js.",
+      "Backend and API: API Development with Express: Expertise in creating RESTful APIs to interact with blockchain, process events, and manage large volumes of real-time data related to liquidity pools, staking, and NFTs. | MongoDB: Implementation of scalable and efficient storage solutions for querying staking events and NFT migrations, ensuring persistence and high availability of data on decentralized platforms. | IPFS Integration: Managing decentralized metadata using IPFS, enabling efficient retrieval and visualization of NFT and other digital asset data.",
+      "Data Management: NFT Data on EVM Networks: Developing backend systems to manage NFTs across different EVM networks (Ethereum, Polygon, etc.). | Query Optimization: Implementing advanced solutions to query large volumes of NFT and staking data efficiently, using filtered queries in databases like MongoDB and GraphQL.",
+      "Testing: Smart Contract Testing: Using frameworks such as Hardhat and Foundry to conduct unit, integration, and security tests on smart contracts, ensuring robustness and efficiency.",
+      "Gas Optimization and Arbitrage: DEX Arbitrage: Developing arbitrage strategies between decentralized exchanges (DEXs), using flash swaps and other mechanisms to profit from price differences. | Gas Optimization: Expertise in optimizing gas usage in smart contracts, ensuring more cost-effective transactions.",
+      "Ethereum Networks and Blockchain: Ethereum Interaction: In-depth knowledge of how to interact with the Ethereum network, read and interpret contract states, call specific functions, and send transactions. | EVM Contract Management: Ability to deploy, update, and manage smart contracts across different EVM networks, applying principles of scalability, efficiency, and security in every implementation.",
+    ],
+  },
 ];
 
 const Services = () => {
@@ -76,7 +82,12 @@ const Services = () => {
 
       <div className="container services__container">
         {competences.map((competence, index) => (
-          <article className="service" key={index}>
+          <article
+            className={`service ${
+              competence.title === "Blockchain Development" ? "full-width" : ""
+            }`}
+            key={index}
+          >
             <div className="service__head">
               <h3>{competence.title}</h3>
             </div>
